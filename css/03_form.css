@@ -1,0 +1,59 @@
+/* Style for the heading within .item-form */
+.item-form h2 {
+  font-size: 24px;
+  /* Font size of the heading */
+  margin-bottom: 10px;
+  /* Margin bottom for spacing */
+  text-align: center;
+  /* Center-align the text */
+}
+
+/* Style for the form group within .item-form */
+.item-form-group {
+  position: relative;
+  /* Make the parent element position:relative */
+  margin-bottom: 15px;
+  /* Margin bottom for spacing between form groups */
+}
+
+/* Style for labels within .item-form-group */
+.item-form-group label {
+  display: block;
+  /* Display labels as block elements */
+  margin-bottom: 5px;
+  /* Reduced margin-bottom for labels */
+}
+
+/* Style for input fields within .item-form-group */
+.item-form-group input {
+  width: 90%;
+  /* Set input fields to occupy 100% width */
+  padding: 8px;
+  /* Reduced padding for input fields */
+  border: 1px solid #ccc;
+  /* Corrected border size and color */
+  border-radius: 3px;
+  /* Rounded corners with a radius of 3px */
+  margin: 10px;
+}
+
+/* Style for error messages within .item-form */
+.item-form-error-message {
+  color: red;
+  /* Text color for error messages */
+  font-size: 14px;
+  /* Font size of error messages */
+  position: absolute;
+  /* Position the error message absolutely */
+  top: calc(100% + 5px);
+  /* Position it below the input field with some spacing */
+  left: 150px;
+  /* Align it to the left of the input field */
+  margin: -10px;
+
+}
+
+.item-form-submit {
+  position: relative;
+  right: -150px;
+}

@@ -1,0 +1,37 @@
+/* Pop-Up Menu */
+
+.item-popupMenu {
+  display: none;
+  text-align: center;
+  position: relative;
+  bottom: -50px;
+  left: 120px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 100px;
+  border-radius: 10px;
+}
+
+.item-popup h2 {
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+#item-popupMenu a {
+  display: block;
+  padding: 5%;
+  margin-right: 0%;
+  text-decoration: none;
+  color: #333;
+}
+
+.item-popupMenu a:hover {
+  background-color: #ddd;
+}
+
+#item-popupButton {
+  position: relative;
+  bottom: -50px;
+  right: -140px;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS-CSS-Library</title>
+
+  <link rel="icon" type="image/x-icon" href="./img/icon.png" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="./pages/subpage1.html">Subpage 1</a></li>
+      <li><a href="./pages/subpage2.html">Subpage 2</a></li>
+      <li><a href="./pages/subpage3.html">Subpage 3</a></li>
+      <li><a href="./pages/subpage4.html">Subpage 4</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="item-grid">
+      <div class="custom-item-grid">
+        <h2 class="heading-button">Buttons</h2>
+        <button id="websiteButton" class="custom-button navigate-button" onclick="directButton('Button 1')">
+          Navigate Website
+        </button>
+        <button class="custom-button activate-button" onclick="activateButton('Button 2')">
+          Button 2
+        </button>
+        <button class="custom-button activate-button" onclick="activateButton('Button 3')">
+          Button 3
+        </button>
+        <button id="toggleButton" class="custom-button toggle-sidebar-button" onclick="toggleSidebar()">
+          Sidebar
+        </button>
+      </div>
+    </div>
+
+    <div class="item-grid">
+      <div class="item-form">
+        <h2>Form</h2>
+        <form id="myForm">
+          <div class="item-form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+            <div class="item-form-error-message" id="name-error"></div>
+          </div>
+          <div class="item-form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <div class="item-form-error-message" id="email-error"></div>
+          </div>
+          <button class="item-form-submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="item-grid">
+      <div class="item-video">
+        <h2>Video Example</h2>
+        <iframe src="https://www.youtube.com/embed/es4x5R-rV9s?si=C-Qp8LZXEcwyU1qa" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="item-grid">
+      <div class="item-checkbox">
+        <h2>Check Box</h2>
+
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="value1" />
+        <label for="checkbox1">Checkbox 1</label><br />
+
+        <input type="checkbox" id="checkbox2" name="checkbox2" value="value2" />
+        <label for="checkbox2">Checkbox 2</label><br />
+
+        <input type="checkbox" id="checkbox3" name="checkbox3" value="value3" />
+        <label for="checkbox3">Checkbox 3</label><br />
+
+        <button class="button" onclick="selectAll()">Select All</button>
+        <button class="button" onclick="deselectAll()">Deselect All</button><br />
+      </div>
+    </div>
+
+    <div class="item-grid">
+      <div class="item-radio">
+        <h2>Radio Button</h2>
+        <input type="radio" id="radio1" name="radio" value="option1" onclick="selectRadioButton()" />
+        <label for="radio1">Option 1</label><br />
+
+        <input type="radio" id="radio2" name="radio" value="option2" onclick="selectRadioButton()" />
+        <label for="radio2">Option 2</label><br />
+
+        <input type="radio" id="radio3" name="radio" value="option3" onclick="selectRadioButton()" />
+        <label for="radio3">Option 3</label><br />
+      </div>
+    </div>
+
+    <div class="item-grid">
+      <div class="item-dropdown">
+        <h2>Dropdown Menu</h2>
+        <select id="elementSelect" onclick="logSelection()">
+          <option value="none">---</option>
+          <option value="element1">Element 1</option>
+          <option value="element2">Element 2</option>
+          <option value="element3">Element 3</option>
+          <option value="element4">Element 4</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="item-grid">
+      <div class="item-textarea">
+        <h2>Text Areas</h2>
+
+        <div class="custom-text">
+          <textarea id="textInput" placeholder="Write something here..."></textarea>
+        </div>
+
+        <div class="enter-text">
+          <button class="enter-button" onclick="enterText()">Enter</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-grid">
+      <div class="item-toggle-switch">
+        <h2>Toggle Switch</h2>
+        <label class="toggle-switch">
+          <input type="checkbox" onclick="toggleSwitch()" />
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="item-grid">
+      <div class="item-darkmode">
+        <h2>Dark Mode</h2>
+        <button class="button" onclick="toggleDarkMode()">Change</button>
+      </div>
+    </div>
+
+    <div class="item-grid">
+      <div class="item-datepicker">
+        <h2>Date Picker</h2>
+        <form>
+          <label for="Date">Select Date</label>
+          <input type="date" id="Date" name="Date" onchange="datePickAndShow()" />
+        </form>
+      </div>
+    </div>
+
+    <div class="item-grid">
+      <div class="item-popup">
+        <h2>Pop-Up Menu</h2>
+        <button id="item-popupButton">Open Menu</button>
+
+        <div id="item-popupMenu" class="item-popupMenu">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-grid" id="mapContainer">
+      <div class="item-map">
+        <h2>Map</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.493431931217!2d-122.40754148468254!3d37.78157457976029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807e7d12d833%3A0xaeb0779f29794a2f!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1643243793810!5m2!1sen!2sus"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </div>
+</body>
+
+</html>

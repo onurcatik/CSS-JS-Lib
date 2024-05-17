@@ -1,0 +1,31 @@
+/* Datepicker container */
+
+.item-datepicker h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.item-datepicker form {
+  margin-top: 1rem;
+  /* Add some space between heading and form */
+  text-align: center;
+}
+
+.item-datepicker label {
+  display: block;
+  /* Make labels behave as block elements */
+  margin-bottom: 0.5rem;
+  /* Add some space between label and input */
+  text-align: center;
+}
+
+.item-datepicker input[type="date"] {
+  width: 80%;
+  /* Make the input fill the container width */
+  padding: 0.5rem;
+  /* Add some padding inside the input */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}

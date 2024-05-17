@@ -1,0 +1,34 @@
+ 
+.item-textarea h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.custom-text textarea {
+  width: calc(100% - 22px); /* Adjusted width to accommodate padding and border */
+  height: 150px;
+  padding: 10px;
+  font-size: 14px; /* Increased font size for better readability */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.enter-text {
+  margin-top: 3%; /* Adjusted margin */
+  text-align: center;
+}
+
+.enter-button {
+  padding: 10px 20px;
+  font-size: 14px; /* Increased font size for better visibility */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.enter-button:hover {
+  background-color: #0056b3;
+}

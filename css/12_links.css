@@ -1,0 +1,30 @@
+/* Style for the heading */
+.item-links h2 {
+  font-size: 24px; /* Set font size */
+  margin-bottom: 10px; /* Add space below heading */
+  text-align: center; /* Center align the heading */
+}
+
+/* Style for the list */
+.item-links ul {
+  list-style-type: none; /* Remove default list style */
+  padding: 10px; /* Add padding inside the list */
+  margin: 10px; /* Add margin around the list */
+}
+
+/* Style for list items */
+.item-links li {
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+/* Style for links */
+.item-links a {
+  text-decoration: none; /* Remove underline from links */
+  color: blue; /* Set link color */
+}
+
+/* Style for links on hover */
+.item-links a:hover {
+  text-decoration: underline; /* Underline links on hover */
+  color: blue; /* Maintain link color on hover */
+}

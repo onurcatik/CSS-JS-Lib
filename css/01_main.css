@@ -1,0 +1,49 @@
+/* Global settings for all elements */
+* {
+  font-family: Open Sans, sans-serif; /* Use the Open Sans font for all elements */
+}
+
+/* Container style defining a grid layout */
+.container {
+  display: grid; /* Use a grid layout */
+  grid-template-columns: repeat(4, 400px); /* Define 4 columns each with a width of 400px */
+  grid-template-rows: repeat(3, 400px); /* Define 3 rows each with a height of 400px */
+  gap: 30px; /* Add a gap of 30px between elements */
+  margin: 0; /* Remove margin */
+  margin-left: 50px; /* Add a left margin of 50px */
+}
+
+/* Style for each item within the grid */
+.item-grid {
+  padding: 1rem; /* Maintain some padding for overall spacing */
+  background-color: #f2f2f2; /* Background color of the element */
+  border: 10px solid #ccc; /* Border style and color */
+  text-align: left; /* Left-align text */
+  height: 80%; /* Set height of the element to 70% of the parent height */
+  padding: 20px 90px; /* Padding top/bottom 20px, left/right 90px */
+  border-radius: 10px; /* Add rounded corners with a radius of 10px */
+  padding: 20px; /* Additional padding to separate text from the edge */
+  background-color: inherit; /* Use the background color of the parent element */
+  color: inherit; /* Use the text color of the parent element */
+}
+
+/* Style for dark mode */
+.darkMode {
+  background-color: #333333; /* Background color in dark mode */
+  color: #ffffff; /* Text color in dark mode */
+}
+
+/* Style for light mode */
+.lightMode {
+  background-color: #ffffff; /* Background color in light mode */
+  color: #000000; /* Text color in light mode */
+}
+
+/* Style for the mode toggle */
+.toggleMode {
+  padding: 10px 20px; /* Padding inside the toggle */
+  border: none; /* No border */
+  background-color: #007bff; /* Background color of the toggle */
+  color: #ffffff; /* Text color of the toggle */
+  cursor: pointer; /* Indicates that the toggle is clickable */
+}

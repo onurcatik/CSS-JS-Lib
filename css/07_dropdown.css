@@ -1,0 +1,31 @@
+/* Dropdown container */
+#elementSelect{
+  
+  position: relative;
+  bottom: -30px;
+
+}
+/* Style for the heading */
+.item-dropdown h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 1;
+}
+
+/* Style for the select dropdown */
+.item-dropdown select {
+  width: 100%; /* Take full width of parent container */
+  padding: 0.5em 1em;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px 0; /* Add some margin to prevent the select box from touching the edges */
+}
+
+/* Style for the options within the dropdown */
+.item-dropdown select option {
+  font-size: 16px;
+}

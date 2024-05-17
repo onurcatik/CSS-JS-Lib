@@ -1,0 +1,34 @@
+/* Style for the sidebar */
+.sidebar {
+  height: 100%; /* Set height to fill the entire viewport */
+  width: 100px; /* Set width */
+  position: fixed; /* Set position fixed */
+  top: 0; /* Align to the top */
+  left: -200px; /* Initially hide the sidebar */
+  background-color: #333; /* Set background color */
+  padding-top: 20px; /* Add padding to the top */
+  transition: left 0.3s ease; /* Add transition effect for left property */
+}
+
+/* Style for sidebar list */
+.sidebar ul {
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove padding */
+}
+
+/* Style for sidebar list items */
+.sidebar ul li {
+  padding: 10px; /* Add padding to list items */
+}
+
+/* Style for sidebar links */
+.sidebar ul li a {
+  color: #fff; /* Set text color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Style for content */
+.content {
+  margin-left: 20px; /* Adjust margin according to sidebar width */
+  padding: 20px; /* Add padding */
+}

@@ -1,0 +1,47 @@
+/* Style for the card */
+.card {
+    width: 250px; /* Set width */
+    border: 1px solid #ccc; /* Add border with light gray color */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    overflow: hidden; /* Hide overflow content */
+    margin: 10px; /* Add margin around the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth effect */
+  }
+  
+  /* Style for card image */
+  .card img {
+    width: 250px; /* Set image width */
+    height: 100px; /* Set image height */
+  }
+  
+  /* Style for card content */
+  .card-content {
+    padding: 20px; /* Add padding inside the card content */
+  }
+  
+  /* Style for heading in card content */
+  .card-content h3 {
+    margin-top: 0; /* Remove top margin from heading */
+  }
+  
+  /* Style for paragraphs in card content */
+  .card-content p {
+    margin-bottom: 10px; /* Add space below paragraphs */
+  }
+  
+  /* Style for links in card content */
+  .card-content a {
+    display: block; /* Display links as block elements */
+    text-align: center; /* Center align links */
+    background-color: #007bff; /* Set background color for links */
+    color: #fff; /* Set text color for links */
+    padding: 10px; /* Add padding to links */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Add border radius for rounded corners */
+  }
+  
+  /* Style for links in card content on hover */
+  .card-content a:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+  

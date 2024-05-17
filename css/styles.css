@@ -1,0 +1,926 @@
+/* Global settings for all elements */
+* {
+  font-family: Open Sans, sans-serif;
+  /* Use the Open Sans font for all elements */
+}
+
+/* Container style defining a grid layout */
+.container {
+  display: grid;
+  /* Use a grid layout */
+  grid-template-columns: repeat(4, 400px);
+  /* Define 4 columns each with a width of 400px */
+  grid-template-rows: repeat(3, 400px);
+  /* Define 3 rows each with a height of 400px */
+  gap: 30px;
+  /* Add a gap of 30px between elements */
+  margin: 0;
+  /* Remove margin */
+  margin-left: 50px;
+  /* Add a left margin of 50px */
+}
+
+/* Style for each item within the grid */
+.item-grid {
+  padding: 1rem;
+  /* Maintain some padding for overall spacing */
+  background-color: #f2f2f2;
+  /* Background color of the element */
+  border: 10px solid #ccc;
+  /* Border style and color */
+  text-align: left;
+  /* Left-align text */
+  height: 80%;
+  /* Set height of the element to 70% of the parent height */
+  padding: 20px 90px;
+  /* Padding top/bottom 20px, left/right 90px */
+  border-radius: 10px;
+  /* Add rounded corners with a radius of 10px */
+  padding: 20px;
+  /* Additional padding to separate text from the edge */
+  background-color: inherit;
+  /* Use the background color of the parent element */
+  color: inherit;
+  /* Use the text color of the parent element */
+}
+
+/* Style for dark mode */
+.darkMode {
+  background-color: #333333;
+  /* Background color in dark mode */
+  color: #ffffff;
+  /* Text color in dark mode */
+}
+
+/* Style for light mode */
+.lightMode {
+  background-color: #ffffff;
+  /* Background color in light mode */
+  color: #000000;
+  /* Text color in light mode */
+}
+
+/* Style for the mode toggle */
+.toggleMode {
+  padding: 10px 20px;
+  /* Padding inside the toggle */
+  border: none;
+  /* No border */
+  background-color: #007bff;
+  /* Background color of the toggle */
+  color: #ffffff;
+  /* Text color of the toggle */
+  cursor: pointer;
+  /* Indicates that the toggle is clickable */
+}
+
+/* Style for the heading */
+.heading-button {
+  font-size: 24px;
+  /* Font size of the heading */
+  margin-bottom: 10px;
+  /* Margin bottom for spacing */
+  text-align: center;
+  /* Center-align the text */
+}
+
+/* Style for the buttons */
+.custom-button {
+  display: block;
+  /* Display the button as a block element */
+  width: 150px;
+  /* Width of the button */
+  padding: 10px 20px;
+  /* Padding inside the button */
+  margin: 0 auto 10px;
+  /* Center the button vertically and horizontally, with margin-bottom of 10px */
+  font-size: 12px;
+  /* Font size of the button text */
+  text-align: center;
+  /* Center-align the text */
+  cursor: pointer;
+  /* Set cursor to pointer on hover */
+  border: none;
+  /* No border */
+  border-radius: 5px;
+  /* Rounded corners with a radius of 5px */
+  background-color: #4CAF50;
+  /* Background color of the button */
+  color: white;
+  /* Text color of the button */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for background color change */
+}
+
+/* Hover effect for .custom-button */
+.custom-button:hover {
+  background-color: #45a049;
+  /* Darker shade of green on hover */
+}
+
+/* Style for the sidebar toggle button */
+.toggle-sidebar-button {
+  background-color: #008CBA;
+  /* Blue color for sidebar toggle button */
+}
+
+/* Style for the heading within .item-form */
+.item-form h2 {
+  font-size: 24px;
+  /* Font size of the heading */
+  margin-bottom: 10px;
+  /* Margin bottom for spacing */
+  text-align: center;
+  /* Center-align the text */
+}
+
+/* Style for the form group within .item-form */
+.item-form-group {
+  position: relative;
+  /* Make the parent element position:relative */
+  margin-bottom: 15px;
+  /* Margin bottom for spacing between form groups */
+}
+
+/* Style for labels within .item-form-group */
+.item-form-group label {
+  display: block;
+  /* Display labels as block elements */
+  margin-bottom: 5px;
+  /* Reduced margin-bottom for labels */
+}
+
+/* Style for input fields within .item-form-group */
+.item-form-group input {
+  width: 90%;
+  /* Set input fields to occupy 100% width */
+  padding: 8px;
+  /* Reduced padding for input fields */
+  border: 1px solid #ccc;
+  /* Corrected border size and color */
+  border-radius: 3px;
+  /* Rounded corners with a radius of 3px */
+  margin: 10px;
+}
+
+/* Style for error messages within .item-form */
+.item-form-error-message {
+  color: red;
+  /* Text color for error messages */
+  font-size: 14px;
+  /* Font size of error messages */
+  position: absolute;
+  /* Position the error message absolutely */
+  top: calc(100% + 5px);
+  /* Position it below the input field with some spacing */
+  left: 150px;
+  /* Align it to the left of the input field */
+  margin: -10px;
+
+}
+
+.item-form-submit {
+  position: relative;
+  right: -150px;
+}
+
+/* Style for the heading within .item-video */
+.item-video h2 {
+  font-size: 24px;
+  /* Font size of the heading */
+  margin-bottom: 10px;
+  /* Margin bottom for spacing */
+  text-align: center;
+  /* Center-align the text */
+}
+
+/* Style for the iframe within .item-video */
+.item-video iframe {
+  width: 100%;
+  /* Set the width of the iframe to 100% */
+  height: 200px;
+  /* Set the height of the iframe to 200px */
+  border: none;
+  /* Remove the border around the iframe */
+  border-radius: 10px;
+  /* Add border radius of 10px */
+}
+
+/* Center-align text within .item-checkbox */
+.item-checkbox {
+  text-align: center;
+}
+
+/* Style for the heading within .item-checkbox */
+.item-checkbox h2 {
+  font-size: 24px;
+  /* Font size of the heading */
+  margin-bottom: 10px;
+  /* Margin bottom for spacing */
+}
+
+/* Style for checkboxes within .item-checkbox */
+.item-checkbox input[type="checkbox"] {
+  margin-right: 5px;
+  /* Margin to the right of checkboxes for spacing */
+}
+
+/* Style for labels associated with checkboxes within .item-checkbox */
+.item-checkbox label {
+  display: inline-block;
+  /* Display labels as inline-block elements */
+  margin-bottom: 5px;
+  /* Margin bottom for spacing */
+}
+
+/* Style for buttons within .item-checkbox */
+.item-checkbox .button {
+  padding: 8px 16px;
+  /* Padding inside the button */
+  margin: 5px;
+  /* Margin around the button */
+  border: none;
+  /* No border */
+  border-radius: 3px;
+  /* Rounded corners with a radius of 3px */
+  background-color: #007bff;
+  /* Background color of the button */
+  color: #fff;
+  /* Text color of the button */
+  cursor: pointer;
+  /* Set cursor to pointer on hover */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for background color change */
+}
+
+/* Hover effect for .button */
+.item-checkbox .button:hover {
+  background-color: #0056b3;
+  /* Darker shade of blue on hover */
+}
+
+/* Hover effect for checkboxes */
+.item-checkbox input[type="checkbox"]:hover+label {
+  color: #007bff;
+  /* Change label color on checkbox hover */
+}
+
+/* Style for checked checkboxes */
+.item-checkbox input[type="checkbox"]:checked+label {
+  font-weight: bold;
+  /* Bold text for checked checkboxes */
+  color: #0056b3;
+  /* Change label color for checked checkboxes */
+}
+
+/* Style for the heading */
+.item-radio h2 {
+  font-size: 24px;
+  /* Set font size */
+  margin-bottom: 10px;
+  /* Add space below heading */
+  text-align: center;
+  /* Center align the heading */
+}
+
+/* Style for radio inputs */
+.item-radio input[type="radio"] {
+  margin-right: 5px;
+  /* Add margin to the right of radio inputs */
+}
+
+/* Style for radio labels */
+.item-radio label {
+  font-size: 15px;
+  /* Set font size */
+  cursor: pointer;
+  /* Set cursor to pointer */
+  text-align: left;
+  /* Align text to the left */
+  display: inline-block;
+  /* Display labels as inline-block */
+  margin-bottom: 30px;
+  /* Adjust margin between labels */
+  text-align: center;
+  /* Center align text */
+  position: relative;
+  /* Set position relative */
+}
+
+/* Style for radio labels on hover */
+.item-radio label:hover {
+  color: blue;
+  /* Change color on hover */
+}
+
+/* Center align the radio container */
+.item-radio {
+  text-align: center;
+}
+
+/* Dropdown container */
+#elementSelect {
+
+  position: relative;
+  bottom: -30px;
+
+}
+
+/* Style for the heading */
+.item-dropdown h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 1;
+}
+
+/* Style for the select dropdown */
+.item-dropdown select {
+  width: 100%;
+  /* Take full width of parent container */
+  padding: 0.5em 1em;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px 0;
+  /* Add some margin to prevent the select box from touching the edges */
+}
+
+/* Style for the options within the dropdown */
+.item-dropdown select option {
+  font-size: 16px;
+}
+
+.item-textarea h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.custom-text textarea {
+  width: calc(100% - 22px);
+  /* Adjusted width to accommodate padding and border */
+  height: 150px;
+  padding: 10px;
+  font-size: 14px;
+  /* Increased font size for better readability */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.enter-text {
+  margin-top: 3%;
+  /* Adjusted margin */
+  text-align: center;
+}
+
+.enter-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  /* Increased font size for better visibility */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.enter-button:hover {
+  background-color: #0056b3;
+}
+
+/* Hide the actual checkbox */
+
+.toggle-switch input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+
+.toggle-switch {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-switch input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .2s;
+  border-radius: 30px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 4px;
+  left: 0px;
+  bottom: -10px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked+.toggle-slider {
+  background-color: #2196F3;
+}
+
+input[type="checkbox"]:checked+.toggle-slider:before {
+  transform: translateX(26px);
+}
+
+/* Style for the heading */
+.item-toggle-switch h2 {
+  font-size: 24px;
+  /* Set font size */
+  margin-bottom: 10px;
+  /* Add space below heading */
+  text-align: center;
+  /* Center align the heading */
+}
+
+/* Center align the toggle switch container */
+.item-toggle-switch {
+  text-align: center;
+}
+
+/* Style for the toggle switch container */
+.toggle-switch {
+  position: relative;
+  /* Set position relative */
+  display: inline-block;
+  /* Display as inline-block */
+  width: 60px;
+  /* Set width */
+  height: 34px;
+  /* Set height */
+}
+
+/* Hide the input checkbox */
+.toggle-switch input {
+  opacity: 0;
+  /* Make input invisible */
+  width: 0;
+  /* Set width to 0 */
+  height: 0;
+  /* Set height to 0 */
+}
+
+/* Style for the toggle slider */
+.toggle-slider {
+  position: absolute;
+  /* Set position absolute */
+  cursor: pointer;
+  /* Set cursor to pointer */
+  top: 0;
+  /* Align to top */
+  left: 0;
+  /* Align to left */
+  right: 0;
+  /* Align to right */
+  bottom: 0;
+  /* Align to bottom */
+  background-color: #ccc;
+  /* Set background color */
+  transition: .4s;
+  /* Add transition effect */
+  border-radius: 34px;
+  /* Add border radius for rounded corners */
+}
+
+/* Style for the slider button */
+.toggle-slider:before {
+  position: absolute;
+  /* Set position absolute */
+  content: "";
+  /* Add content */
+  height: 26px;
+  /* Set height */
+  width: 26px;
+  /* Set width */
+  left: 4px;
+  /* Align to left */
+  bottom: 4px;
+  /* Align to bottom */
+  background-color: white;
+  /* Set background color */
+  transition: .4s;
+  /* Add transition effect */
+  border-radius: 50%;
+  /* Make it circular */
+}
+
+/* Style for the slider button when input is checked */
+input:checked+.toggle-slider {
+  background-color: #2196F3;
+  /* Change background color */
+}
+
+/* Style for the slider button when input is focused */
+input:focus+.toggle-slider {
+  box-shadow: 0 0 1px #2196F3;
+  /* Add box shadow */
+}
+
+/* Style for the slider button when input is checked */
+input:checked+.toggle-slider:before {
+  transform: translateX(26px);
+  /* Move the button to the right */
+}
+
+/* Center-align content within .item-darkmode */
+.item-darkmode {
+  text-align: center;
+  /* Center align content */
+}
+
+/* Style for the heading within .item-darkmode */
+.item-darkmode h2 {
+  font-size: 24px;
+  /* Font size of the heading */
+  margin-bottom: 70px;
+  /* Margin bottom for spacing */
+}
+
+/* Style for the dark mode toggle button within .item-darkmode */
+.item-darkmode .toggleMode {
+  padding: 8px 16px;
+  /* Padding inside the button */
+  border: none;
+  /* No border */
+  border-radius: 3px;
+  /* Rounded corners with a radius of 3px */
+  background-color: #007bff;
+  /* Background color of the button */
+  color: #fff;
+  /* Text color of the button */
+  cursor: pointer;
+  /* Set cursor to pointer on hover */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for background color change */
+}
+
+/* Hover effect for the dark mode toggle button */
+.item-darkmode .toggleMode:hover {
+  background-color: #0056b3;
+  /* Darker shade of blue on hover */
+}
+
+/* Datepicker container */
+
+.item-datepicker h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.item-datepicker form {
+  margin-top: 1rem;
+  /* Add some space between heading and form */
+  text-align: center;
+}
+
+.item-datepicker label {
+  display: block;
+  /* Make labels behave as block elements */
+  margin-bottom: 0.5rem;
+  /* Add some space between label and input */
+  text-align: center;
+}
+
+.item-datepicker input[type="date"] {
+  width: 80%;
+  /* Make the input fill the container width */
+  padding: 0.5rem;
+  /* Add some padding inside the input */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+
+/* Style for the heading */
+.item-links h2 {
+  font-size: 24px;
+  /* Set font size */
+  margin-bottom: 10px;
+  /* Add space below heading */
+  text-align: center;
+  /* Center align the heading */
+}
+
+/* Style for the list */
+.item-links ul {
+  list-style-type: none;
+  /* Remove default list style */
+  padding: 10px;
+  /* Add padding inside the list */
+  margin: 10px;
+  /* Add margin around the list */
+}
+
+/* Style for list items */
+.item-links li {
+  margin-bottom: 10px;
+  /* Add space between list items */
+}
+
+/* Style for links */
+.item-links a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: blue;
+  /* Set link color */
+}
+
+/* Style for links on hover */
+.item-links a:hover {
+  text-decoration: underline;
+  /* Underline links on hover */
+  color: blue;
+  /* Maintain link color on hover */
+}
+
+/* Google-Map */
+
+.item-map h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.item-map iframe {
+  width: 100%;
+  /* Adjust this value as needed */
+  height: 200px;
+  /* Adjust this value as needed */
+  border-radius: 10px !important;
+  /* Adjust the radius value as needed */
+}
+
+/* Style for the card */
+.card {
+  width: 250px;
+  /* Set width */
+  border: 1px solid #ccc;
+  /* Add border with light gray color */
+  border-radius: 8px;
+  /* Add border radius for rounded corners */
+  overflow: hidden;
+  /* Hide overflow content */
+  margin: 10px;
+  /* Add margin around the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add box shadow for depth effect */
+}
+
+/* Style for card image */
+.card img {
+  width: 250px;
+  /* Set image width */
+  height: 100px;
+  /* Set image height */
+}
+
+/* Style for card content */
+.card-content {
+  padding: 20px;
+  /* Add padding inside the card content */
+}
+
+/* Style for heading in card content */
+.card-content h3 {
+  margin-top: 0;
+  /* Remove top margin from heading */
+}
+
+/* Style for paragraphs in card content */
+.card-content p {
+  margin-bottom: 10px;
+  /* Add space below paragraphs */
+}
+
+/* Style for links in card content */
+.card-content a {
+  display: block;
+  /* Display links as block elements */
+  text-align: center;
+  /* Center align links */
+  background-color: #007bff;
+  /* Set background color for links */
+  color: #fff;
+  /* Set text color for links */
+  padding: 10px;
+  /* Add padding to links */
+  text-decoration: none;
+  /* Remove underline from links */
+  border-radius: 5px;
+  /* Add border radius for rounded corners */
+}
+
+/* Style for links in card content on hover */
+.card-content a:hover {
+  background-color: #0056b3;
+  /* Change background color on hover */
+}
+
+/* Navbar container */
+nav {
+  background-color: #333;
+  /* darker background for better contrast */
+  padding: 20px;
+  overflow: auto;
+  /* clearfix to contain floated items */
+}
+
+/* Navigation list */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* center align the items */
+}
+
+/* Individual list items */
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Links */
+nav a {
+  text-decoration: none;
+  color: #fff;
+  /* white color for better contrast */
+  transition: color 0.3s ease;
+  /* smooth transition for hover effect */
+}
+
+/* Hover effect */
+nav a:hover {
+  color: #ffcc00;
+  /* change color on hover */
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 10px;
+    /* reduce padding for smaller screens */
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0;
+    /* add spacing between items */
+  }
+}
+
+/* Footer container */
+footer {
+  background-color: #333;
+  /* darker background for better contrast */
+  padding: 20px;
+  /* increased padding for better spacing */
+  color: #fff;
+  /* white text for better contrast */
+  text-align: center;
+  /* center align text */
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 15px;
+    /* reduce padding for smaller screens */
+  }
+}
+
+/* Copyright text */
+footer p {
+  margin: 0;
+  /* remove default margins */
+  font-size: 14px;
+  /* smaller font size */
+  opacity: 0.8;
+  /* slightly reduced opacity */
+}
+
+/* Link styles (if applicable) */
+footer a {
+  color: #ffcc00;
+  /* link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  /* smooth transition for hover effect */
+}
+
+/* Hover effect for links */
+footer a:hover {
+  color: #fff;
+  /* change color on hover */
+}
+
+/* Style for the sidebar */
+.sidebar {
+  height: 100%;
+  /* Set height to fill the entire viewport */
+  width: 100px;
+  /* Set width */
+  position: fixed;
+  /* Set position fixed */
+  top: 0;
+  /* Align to the top */
+  left: -200px;
+  /* Initially hide the sidebar */
+  background-color: #333;
+  /* Set background color */
+  padding-top: 20px;
+  /* Add padding to the top */
+  transition: left 0.3s ease;
+  /* Add transition effect for left property */
+}
+
+/* Style for sidebar list */
+.sidebar ul {
+  list-style-type: none;
+  /* Remove default list style */
+  padding: 0;
+  /* Remove padding */
+}
+
+/* Style for sidebar list items */
+.sidebar ul li {
+  padding: 10px;
+  /* Add padding to list items */
+}
+
+/* Style for sidebar links */
+.sidebar ul li a {
+  color: #fff;
+  /* Set text color */
+  text-decoration: none;
+  /* Remove underline from links */
+}
+
+/* Style for content */
+.content {
+  margin-left: 20px;
+  /* Adjust margin according to sidebar width */
+  padding: 20px;
+  /* Add padding */
+}
+
+/* Pop-Up Menu */
+
+.item-popupMenu {
+  display: none;
+  text-align: center;
+  position: relative;
+  bottom: -50px;
+  left: 120px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 100px;
+  border-radius: 10px;
+}
+
+.item-popup h2 {
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+#item-popupMenu a {
+  display: block;
+  padding: 5%;
+  margin-right: 0%;
+  text-decoration: none;
+  color: #333;
+}
+
+.item-popupMenu a:hover {
+  background-color: #ddd;
+}
+
+#item-popupButton {
+  position: relative;
+  bottom: -50px;
+  right: -140px;
+}

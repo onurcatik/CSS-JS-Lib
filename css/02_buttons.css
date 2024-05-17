@@ -1,0 +1,32 @@
+/* Style for the heading */
+.heading-button {
+  font-size: 24px; /* Font size of the heading */
+  margin-bottom: 10px; /* Margin bottom for spacing */
+  text-align: center; /* Center-align the text */
+}
+
+/* Style for the buttons */
+.custom-button {
+  display: block; /* Display the button as a block element */
+  width: 150px; /* Width of the button */
+  padding: 10px 20px; /* Padding inside the button */
+  margin: 0 auto 10px; /* Center the button vertically and horizontally, with margin-bottom of 10px */
+  font-size: 12px; /* Font size of the button text */
+  text-align: center; /* Center-align the text */
+  cursor: pointer; /* Set cursor to pointer on hover */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners with a radius of 5px */
+  background-color: #4CAF50; /* Background color of the button */
+  color: white; /* Text color of the button */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+/* Hover effect for .custom-button */
+.custom-button:hover {
+  background-color: #45a049; /* Darker shade of green on hover */
+}
+
+/* Style for the sidebar toggle button */
+.toggle-sidebar-button {
+  background-color: #008CBA; /* Blue color for sidebar toggle button */
+}

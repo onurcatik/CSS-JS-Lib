@@ -1,0 +1,33 @@
+/* Footer container */
+footer {
+  background-color: #333; /* darker background for better contrast */
+  padding: 20px; /* increased padding for better spacing */
+  color: #fff; /* white text for better contrast */
+  text-align: center; /* center align text */
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+  footer {
+      padding: 15px; /* reduce padding for smaller screens */
+  }
+}
+
+/* Copyright text */
+footer p {
+  margin: 0; /* remove default margins */
+  font-size: 14px; /* smaller font size */
+  opacity: 0.8; /* slightly reduced opacity */
+}
+
+/* Link styles (if applicable) */
+footer a {
+  color: #ffcc00; /* link color */
+  text-decoration: none;
+  transition: color 0.3s ease; /* smooth transition for hover effect */
+}
+
+/* Hover effect for links */
+footer a:hover {
+  color: #fff; /* change color on hover */
+}

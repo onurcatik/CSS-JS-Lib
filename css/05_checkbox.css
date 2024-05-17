@@ -1,0 +1,49 @@
+/* Center-align text within .item-checkbox */
+.item-checkbox {
+  text-align: center;
+}
+
+/* Style for the heading within .item-checkbox */
+.item-checkbox h2 {
+  font-size: 24px; /* Font size of the heading */
+  margin-bottom: 10px; /* Margin bottom for spacing */
+}
+
+/* Style for checkboxes within .item-checkbox */
+.item-checkbox input[type="checkbox"] {
+  margin-right: 5px; /* Margin to the right of checkboxes for spacing */
+}
+
+/* Style for labels associated with checkboxes within .item-checkbox */
+.item-checkbox label {
+  display: inline-block; /* Display labels as inline-block elements */
+  margin-bottom: 5px; /* Margin bottom for spacing */
+}
+
+/* Style for buttons within .item-checkbox */
+.item-checkbox .button {
+  padding: 8px 16px; /* Padding inside the button */
+  margin: 5px; /* Margin around the button */
+  border: none; /* No border */
+  border-radius: 3px; /* Rounded corners with a radius of 3px */
+  background-color: #007bff; /* Background color of the button */
+  color: #fff; /* Text color of the button */
+  cursor: pointer; /* Set cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+/* Hover effect for .button */
+.item-checkbox .button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Hover effect for checkboxes */
+.item-checkbox input[type="checkbox"]:hover + label {
+  color: #007bff; /* Change label color on checkbox hover */
+}
+
+/* Style for checked checkboxes */
+.item-checkbox input[type="checkbox"]:checked + label {
+  font-weight: bold; /* Bold text for checked checkboxes */
+  color: #0056b3; /* Change label color for checked checkboxes */
+}

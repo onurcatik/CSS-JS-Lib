@@ -1,0 +1,32 @@
+/* Style for the heading */
+.item-radio h2 {
+  font-size: 24px; /* Set font size */
+  margin-bottom: 10px; /* Add space below heading */
+  text-align: center; /* Center align the heading */
+}
+
+/* Style for radio inputs */
+.item-radio input[type="radio"] {
+  margin-right: 5px; /* Add margin to the right of radio inputs */
+}
+
+/* Style for radio labels */
+.item-radio label {
+  font-size: 15px; /* Set font size */
+  cursor: pointer; /* Set cursor to pointer */
+  text-align: left; /* Align text to the left */
+  display: inline-block; /* Display labels as inline-block */
+  margin-bottom: 30px; /* Adjust margin between labels */
+  text-align: center; /* Center align text */
+  position: relative; /* Set position relative */
+}
+
+/* Style for radio labels on hover */
+.item-radio label:hover {
+  color: blue; /* Change color on hover */
+}
+
+/* Center align the radio container */
+.item-radio {
+  text-align: center; 
+}
